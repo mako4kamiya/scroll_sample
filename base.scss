@@ -1,0 +1,93 @@
+body {
+    margin: unset;
+    background-color: #ddd;
+    * {
+        box-sizing: border-box;
+    }
+    p {
+        font-size: large;
+        font-weight: bold;
+        padding: 0 1em;
+    }
+    header {
+        width: 100%;
+        nav {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: unset;
+                margin: unset;
+                li {
+                    list-style: none;
+                    text-align: center;
+                    padding: 1em 0;
+                    width: calc(100% / 4);
+                    border-top: 3px solid black;
+                    border-right: unset;
+                    border-bottom: 3px solid black;
+                    border-left: 3px solid black;
+                    &:last-child {
+                        border-right: 3px solid black;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        padding-top: 1em;
+        padding-bottom: 100vh;
+        section {
+            background-color: #fff;
+            padding-bottom: 5em;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+@media (max-width: 1020px) and (min-width: 768px) {
+    body {
+        header {
+            nav {
+                ul {
+                    li {
+                        width: calc(100% / 2);
+                        border-top: 3px solid black;
+                        border-right: 3px solid black;
+                        border-bottom: 3px solid black;
+                        border-left: 3px solid black;
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            border-bottom: unset;
+                        }
+                        &:nth-child(1),
+                        &:nth-child(3) {
+                            border-right: unset;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    body {
+        header {
+            nav {
+                ul {
+                    li {
+                        width: 100%;
+                        border-top: 3px solid black;
+                        border-right: 3px solid black;
+                        border-bottom: unset;
+                        border-left: 3px solid black;
+                        &:last-child {
+                            border-bottom: 3px solid black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

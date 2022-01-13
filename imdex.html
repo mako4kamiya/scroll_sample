@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Fixed Sample</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="base.css">
+    <script src="scroll.js" defer ></script>
+    <script src="base.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <p>header</p>
+        <nav>
+            <p>nav</p>
+            <ul>
+                <li><a href="#content1">content1</a></li>
+                <li><a href="#content2">content2</a></li>
+                <li><a href="#content3">content3</a></li>
+                <li><a href="#content4">content4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <p>
+            <small>
+                画面サイズを変更し、ページを更新してから「content」ボタンを推してください。<br>
+                ※ページを更新することで、ヘッダーの高さを取得します。
+            </small>
+        </p>
+        <section id="content1">
+            <p>content1</p>
+        </section>
+        <section id="content2">
+            <p>content2</p>
+        </section>
+        <section id="content3">
+            <p>content3</p>
+        </section>
+        <section id="content4">
+            <p>content4</p>
+        </section>
+    </main>
+</body>
+</html>
